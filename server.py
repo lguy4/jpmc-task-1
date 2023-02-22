@@ -215,7 +215,7 @@ def get(req_handler, routes):
                 req_handler.wfile.write(bytes(data, encoding='utf-8'))
                 return
 
-# this port is unavailable on my computer
+# port 8080 is unavailable on my computer; changed to port 10648 by finding listening port via "netstat -a"
 def run(routes, host='0.0.0.0', port=10648):
     """ Runs a class as a server whose methods have been decorated with
         @route.
